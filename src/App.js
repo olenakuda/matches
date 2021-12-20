@@ -1,6 +1,4 @@
-import logo from './logo.svg';
 import './App.css';
-import { useEffect } from 'react';
 import axios from "axios";
 import React from 'react';
 
@@ -35,19 +33,17 @@ export default class App extends React.Component {
           <img src="https://www.sportradar.com/wp-content/uploads/sites/21/2021/07/Sportradar-Header-Running_Female.jpg" class="card-img-top" alt="..."/>
           <div class="card-body">
             <h1 class="card-title">{statisticsItem.tournament.name}</h1>
-            <p class="card-text">
+            <diw class="card-text">
               {statisticsItem.matches.map(match => 
                 <div>
                   {Scores(match)}
                 </div>
                 )}
-            </p>
+            </diw>
           </div>
           <p class="card-text m-2"><small class="text-muted">Last update: {formatDate(Date.now())}</small></p>
         </div>
       )}
-
-
     </div>;
   }
 }
@@ -64,7 +60,7 @@ function Scores(match){
               <span class="ms-2">{match.teams.away}</span>
               <span class="badge bg-primary rounded-pill ms-2">{match.score.away}</span>
             </span>
-            
+          
             <span class="badge bg-secondary rounded-pill align-"> {formatDate(match.dateTime)}</span>
         </li>
         <li class="list-group-item align-items-center fst-italic fw-light">
