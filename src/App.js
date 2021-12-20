@@ -65,7 +65,7 @@ function Scores(match){
               <span class="badge bg-primary rounded-pill ms-2">{match.score.away}</span>
             </span>
             
-            <span class="badge bg-primary rounded-pill align-"> {formatDate(match.dateTime)}</span>
+            <span class="badge bg-secondary rounded-pill align-"> {formatDate(match.dateTime)}</span>
         </li>
         <li class="list-group-item align-items-center fst-italic fw-light">
           {Events(match)}
